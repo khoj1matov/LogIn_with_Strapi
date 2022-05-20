@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:loginstrapi/views/home/home_view.dart';
+import 'package:loginstrapi/views/auth/log/login_view.dart';
 
 class MyRoutes {
   static final MyRoutes _instace = MyRoutes.init();
@@ -10,8 +10,8 @@ class MyRoutes {
     var args = s.arguments;
 
     switch (s.name) {
-      case '/home':
-        return MaterialPageRoute(builder: (_) => const HomeView());
+      case '/login':
+        return MaterialPageRoute(builder: (_) => const LoginView());
     }
   }
 }
